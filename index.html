@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Campus Navigation</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+
+<body>
+
+<header>
+    <h1>Smart Campus Navigation</h1>
+</header>
+
+<div id="loginBox">
+    <h3>Login</h3>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="error"></p>
+</div>
+
+<div id="mapSection" style="display:none;">
+
+    <div class="search-box">
+
+        <input type="text" id="startInput" placeholder="Search Starting Location">
+        <div id="startList" class="suggestions"></div>
+
+        <input type="text" id="endInput" placeholder="Search Destination">
+        <div id="endList" class="suggestions"></div>
+
+        <button onclick="findRoute()">Find Route</button>
+
+        <h3 id="distance"></h3>
+
+    </div>
+
+    <div id="map"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

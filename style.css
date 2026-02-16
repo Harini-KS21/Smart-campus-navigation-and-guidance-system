@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+header {
+    background: #1e8e3e;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#loginBox {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 8px 15px;
+    background: #1e8e3e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #166c2d;
+}
+
+.search-box {
+    background: white;
+    padding: 15px;
+    width: 350px;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    z-index: 1000;
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+}
+
+.suggestions {
+    background: white;
+    border: 1px solid #ccc;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.suggestions div {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.suggestions div:hover {
+    background: #f0f0f0;
+}
+
+#map {
+    height: 100vh;
+    width: 100%;
+}
